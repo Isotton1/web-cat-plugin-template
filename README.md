@@ -14,17 +14,17 @@
 TODO: Add purpose for instructor
 | User | UID | Privilege | Purpose |
 |------|-----|-----------|---------|
-| Instructor | 60001 | High | |
-| Student | 60002 | Low | Run student code and tests |
+| instructor | 60001 | High | |
+| student | 60002 | Low | Run student code and tests |
 
 ## Files
 TODO: Add purposes and info about using sudo to run student code
-| Files | Owner | Purpose |
-|-------|-------|---------|
-| Dependencies Script | root | |
-| Student Code Script | student | |
-| Plugin Entrypoint | instructor | |
-| Plugin Director | instructor | |
+| Files | Owner | Execution | Purpose |
+|-------|-------|-----------|---------|
+| Dependencies Script | root | Manual or by Dockerfile |
+| Plugin Entrypoint | instructor | Manual or by Dockerfile |
+| Student Code Script | student | `sudo -u student <student code script>`, by plugin entrypoint |
+| Plugin Director | instructor | By plugin entrypoint |
 
 ## Container
 
